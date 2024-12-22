@@ -1,0 +1,3 @@
+# PHP Silent Array Key Creation and Unexpected NULL Values
+This repository demonstrates a subtle bug in PHP related to array key handling.  PHP's dynamic typing allows the creation of array keys on the fly, even if they are not explicitly defined.  Accessing an undefined key doesn't result in an error; instead, it returns NULL. This can lead to unexpected behavior and difficult-to-debug issues.
+The `bug.php` file showcases the problematic code. The `bugSolution.php` file presents a solution using `array_key_exists()` to explicitly check for key existence, improving code robustness.

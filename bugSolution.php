@@ -1,0 +1,3 @@
+The safest approach is to use `array_key_exists()` to explicitly check if a key exists before accessing it:
+```php $myArray = []; if(array_key_exists("anotherKey", $myArray)) { echo "Key exists"; } else { echo "Key does not exist"; } ```
+`array_key_exists()` directly checks for the key's presence without triggering implicit key creation, preventing unexpected NULL values from affecting your code. This method provides a more reliable way to handle array keys, enhancing the overall robustness of your PHP applications.
